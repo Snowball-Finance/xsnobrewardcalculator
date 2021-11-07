@@ -164,7 +164,7 @@ async function searchTransactions() {
 
     //get only the transfer transactions
     let onlyTransfers = lodash.filter(allDecodedEvents, function (o) {
-      return o.name.startsWith('Transfer');
+      return o.name.startsWith('Transfer') || o.name.startsWith('Deposit');
     });
     allDecodedEvents = [];
 
@@ -177,7 +177,12 @@ async function searchTransactions() {
       const WAVAXIncentive = element.WAVAXIncentive;
       element.params.forEach((element2) => {
         if (validTo && validFrom) {
-          if (element2.name == 'value') {
+          if (
+            element2.name == 'value' 
+            || (element2.name == 'wad' 
+              && listStrategyContracts[counter].protocol != 'AAVE'
+              && listStrategyContracts[counter].name != 'WAVAX')
+          ) {
             if(WAVAXIncentive){
               tokensHarvested.totalWAVAXHarvested += (element2.value * 1);
               contractHarvestedWAVAX += (element2.value * 1);
@@ -204,11 +209,13 @@ async function searchTransactions() {
           if ((element2.value.toLowerCase() ===
             listStrategyContracts[counter].stakingAddress.toLowerCase()
             || (element2.value.toLowerCase() === Constants.ZeroAddress))) {
-            validFrom = true;
+              validFrom = true;
           };
-
         }
-        if (element2.name == 'to') {
+        if (element2.name == 'to' || element2.name == 'dst') {
+          if(element2.name == 'dst'){
+            validFrom = true;
+          }
           validTo = (element2.value.toLowerCase() === listStrategyContracts[counter].strategy.toLowerCase());
         }
       });
@@ -217,11 +224,14 @@ async function searchTransactions() {
     if (settings.saveToJSON) {
       jsonObject.contractList.push({ contract: listStrategyContracts[counter].strategy, name: listStrategyContracts[counter].name, harvested: contractHarvested / 10 ** 18 });
     }
-    totalHarvested.push({
+    const strategyResult = {
       name:listStrategyContracts[counter].name,
       protocol:listStrategyContracts[counter].protocol,
       USDValue:contractUSDHarvested
-    });
+    };
+
+    totalHarvested.push(strategyResult);
+    console.log(strategyResult, contractHarvested/1e18, contractHarvestedWAVAX/1e18)
     counter++;
   } while (counter <= lenList - 1);
 

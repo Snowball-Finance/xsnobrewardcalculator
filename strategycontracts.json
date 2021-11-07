@@ -386,7 +386,7 @@
   {
     "protocol": "Pangolin",
     "name": "AVAX-AVME",
-    "strategy": "0x5547e1aaD9c6557C625Da99a0Da1aEcdA1cE2992",
+    "strategy": "0xf809b288E339A3DD1b8b61096Fa41C573e14deeA",
     "stakingAddress": "0xE4FED988974C0B7DFEB162287DeD67c6B197Af63"
   },
   {
@@ -462,12 +462,6 @@
     "name": "PNG-AVAX"
   },
   {
-    "stakingAddress": "0xd6a4F121CA35509aF06A0Be99093d08462f53052",
-    "protocol": "Trader Joe",
-    "strategy": "0xAa933C94c255F092711C70E366B01939C349d84B",
-    "name": "OLD AVAX-JOE"
-  },
-  {
     "stakingAddress": "0x188bED1968b795d5c9022F6a0bb5931Ac4c18F00",
     "protocol": "Trader Joe",
     "strategy": "0x2C6F37C4e80aE6A553A639f706E62fE5b3d9bB81",
@@ -478,12 +472,6 @@
     "protocol": "Trader Joe",
     "strategy": "0x52bc8E025C2A24841C946339a5eb4C727C4F6766",
     "name": "AVAX-SNOB"
-  },
-  {
-    "stakingAddress": "0xd6a4F121CA35509aF06A0Be99093d08462f53052",
-    "protocol": "Trader Joe",
-    "strategy": "0x0305E53AaB1634013131c3d8d729E712A3237a93",
-    "name": "OLD AVAX-XAVA"
   },
   {
     "stakingAddress": "0xd6a4F121CA35509aF06A0Be99093d08462f53052",
@@ -508,18 +496,6 @@
     "protocol": "Trader Joe",
     "strategy": "0x3274C42C24B190fFE5B168b2690829cDa7Bf710e",
     "name": "AVAX-YAK"
-  },
-  {
-    "stakingAddress": "0xd6a4F121CA35509aF06A0Be99093d08462f53052",
-    "protocol": "Trader Joe",
-    "strategy": "0xf79BB7ebE67A58f78eE8EE16566e2B170E0cdBf7",
-    "name": "AVAX-SHERPA"
-  },
-  {
-    "stakingAddress": "0xd6a4F121CA35509aF06A0Be99093d08462f53052",
-    "protocol": "Trader Joe",
-    "strategy": "0x307d8c5B83d5Aea72D683Ed62a172572b10185D6",
-    "name": "OLD AVAX-YAK"
   },
   {
     "stakingAddress": "0xd6a4F121CA35509aF06A0Be99093d08462f53052",
@@ -644,12 +620,6 @@
   {
     "stakingAddress": "0xd6a4F121CA35509aF06A0Be99093d08462f53052",
     "protocol": "Trader Joe",
-    "strategy": "0x5E881dE5B6127134600e03705966f3EA37D9e2d2",
-    "name": "OLD AVAX-SPELL"
-  },
-  {
-    "stakingAddress": "0xd6a4F121CA35509aF06A0Be99093d08462f53052",
-    "protocol": "Trader Joe",
     "strategy": "0xcb0A11DfA23e457A917488f11843822085edf146",
     "name": "USDC.e-MAI"
   },
@@ -744,6 +714,36 @@
     "name": "AVAX-GB"
   },
   {
+    "stakingAddress": "0x188bED1968b795d5c9022F6a0bb5931Ac4c18F00",
+    "protocol": "Trader Joe",
+    "strategy": "0x759EED71e5086bBE903036F5D289e20Fc263ab69",
+    "name": "AVAX-AMPL"
+  },
+  {
+    "stakingAddress": "0x188bED1968b795d5c9022F6a0bb5931Ac4c18F00",
+    "protocol": "Trader Joe",
+    "strategy": "0xDA59ABC89c7be9D7fb3E049EBCC42B1dE84A6272",
+    "name": "AVAX-ICE"
+  },
+  {
+    "stakingAddress": "0x188bED1968b795d5c9022F6a0bb5931Ac4c18F00",
+    "protocol": "Trader Joe",
+    "strategy": "0x4550E794F3BA870032854B4c35Ad4E469FA7b989",
+    "name": "AVAX-OH"
+  },
+  {
+    "stakingAddress": "0x188bED1968b795d5c9022F6a0bb5931Ac4c18F00",
+    "protocol": "Trader Joe",
+    "strategy": "0x1C242Ae2350f7C6a6124215cBdd9a55e6C124369",
+    "name": "AVAX-TRACTOR"
+  },
+  {
+    "stakingAddress": "0x188bED1968b795d5c9022F6a0bb5931Ac4c18F00",
+    "protocol": "Trader Joe",
+    "strategy": "0x2EE78B4d4F15ae2489617aE82df83BffA5cfbB0D",
+    "name": "AVAX-APEX"
+  },
+  {
     "stakingAddress": "0xd6a4F121CA35509aF06A0Be99093d08462f53052",
     "protocol": "Trader Joe",
     "strategy": "0x4B5f643489965bd9383A578c5FB55808Caa4F225",
@@ -796,6 +796,12 @@
     "protocol": "BENQI",
     "strategy": "0xc9a6A413FBAf5029A4d4b9Ca9e15efe88c8e70d4",
     "name": "DAI.e"
+  },
+  {
+    "stakingAddress": "0x486Af39519B4Dc9a7fCcd318217352830E8AD9b4",
+    "protocol": "BENQI",
+    "strategy": "0x2098e8Ce5e24BB6f4984f9667ABd7aDC3d362a33",
+    "name": "WAVAX"
   },
   {
     "stakingAddress": "0x486Af39519B4Dc9a7fCcd318217352830E8AD9b4",
