@@ -567,12 +567,6 @@
   {
     "stakingAddress": "0xd6a4F121CA35509aF06A0Be99093d08462f53052",
     "protocol": "Trader Joe",
-    "strategy": "0xe02E4Ee85C91ddE19938a2997014224D28f977e5",
-    "name": "ETH.e-USDT.e"
-  },
-  {
-    "stakingAddress": "0xd6a4F121CA35509aF06A0Be99093d08462f53052",
-    "protocol": "Trader Joe",
     "strategy": "0x753949E85E50ede6B800D0dFD1e8d1882B966Bb2",
     "name": "AVAX-USDC.e"
   },

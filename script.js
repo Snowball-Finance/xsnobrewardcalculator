@@ -11,14 +11,18 @@ const listStrategyContracts = JSON.parse(fs.readFileSync('./strategycontracts.js
 const { retrieveJOEPrice, retrieveTokenPriceInAVAX, retrieveAVAXPrice } = require('./src/graph.js');
 const { Constants } = require('./src/resources.js');
 
-async function genericQuery(contractAddress, pagenumber, key) {
-  let query = await axios({
-    url: `${Constants.covalentAPIURL}${contractAddress}/transactions_v2/?key=${key}&page-number=${pagenumber}&page-size=500`,
-    method: 'get'
-  }).catch(error => {
-    console.error(error)
-  });
-  return query;
+async function genericQuery(contractAddress, pagenumber, key, retries = 0) {
+  if(retries < 3){
+    try{
+      return query = await axios({
+        url: `${Constants.covalentAPIURL}${contractAddress}/transactions_v2/?key=${key}&page-number=${pagenumber}&page-size=500`,
+        method: 'get'});
+    }catch (error){
+      console.error(error)
+      let retry = retries + 1
+      await genericQuery(contractAddress, pagenumber, key, retry);
+    }
+  }
 }
 
 function registerDate(date) {
