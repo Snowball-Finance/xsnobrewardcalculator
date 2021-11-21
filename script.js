@@ -8,7 +8,7 @@ const readline = require('readline').createInterface({
 
 const settings = JSON.parse(fs.readFileSync('./settings.json'));
 const listStrategyContracts = JSON.parse(fs.readFileSync('./strategycontracts.json'));
-const { retrieveJOEPrice, retrieveTokenPriceInAVAX, retrieveAVAXPrice } = require('./src/graph.js');
+const { retrieveJOEPrice, retrieveTokenPriceInAVAX, retrieveAVAXPrice, retrieveAXIALPrice } = require('./src/graph.js');
 const { Constants } = require('./src/resources.js');
 
 async function genericQuery(contractAddress, pagenumber, key, retries = 0) {
@@ -96,10 +96,12 @@ async function searchTransactions() {
     totalPNGHarvested:0,
     totalJOEHarvested:0,
     totalQIHarvested:0,
-    totalWAVAXHarvested:0
+    totalWAVAXHarvested:0,
+    totalAXIALHarvested:0
   }
 
   const JOEPrice = await retrieveJOEPrice();
+  const AXIALPrice = await retrieveAXIALPrice();
   const PNGPrice = await retrieveTokenPriceInAVAX(Constants.PNGContract);
   const QIPrice = await retrieveTokenPriceInAVAX(Constants.QIContract);
   const AVAXValue = await retrieveAVAXPrice();
@@ -145,6 +147,9 @@ async function searchTransactions() {
               break;
             case 'Trader Joe':  case 'Banker Joe':
               tokenAddress = Constants.JoeContract;
+              break;
+            case 'AXIAL':
+              tokenAddress = Constants.AXIALContract;
               break;
             case 'BENQI':
               tokenAddress = Constants.QIContract;
@@ -197,6 +202,10 @@ async function searchTransactions() {
                   tokensHarvested.totalPNGHarvested += (element2.value * 1);
                   contractUSDHarvested += PNGPrice*(element2.value * 1 / 10 ** 18);
                   break;
+                case 'AXIAL':
+                  tokensHarvested.totalAXIALHarvested += (element2.value * 1);
+                  contractUSDHarvested += AXIALPrice*(element2.value * 1 / 10 ** 18);
+                  break;
                 case 'Trader Joe': case 'Banker Joe':
                   tokensHarvested.totalJOEHarvested += (element2.value * 1);
                   contractUSDHarvested += JOEPrice*(element2.value * 1 / 10 ** 18);
@@ -233,7 +242,6 @@ async function searchTransactions() {
       protocol:listStrategyContracts[counter].protocol,
       USDValue:contractUSDHarvested
     };
-
     totalHarvested.push(strategyResult);
     counter++;
   } while (counter <= lenList - 1);
@@ -248,32 +256,38 @@ async function searchTransactions() {
     jsonObject.totalPNGHarvested = tokensHarvested.totalPNGHarvested / 10 ** 18;
     jsonObject.totalJOEHarvested = tokensHarvested.totalJOEHarvested / 10 ** 18;
     jsonObject.totalQIHarvested = tokensHarvested.totalQIHarvested / 10 ** 18;
+    jsonObject.totalAXIALHarvested = tokensHarvested.totalAXIALHarvested / 10 ** 18;
     jsonObject.totalWAVAXHarvested = tokensHarvested.totalWAVAXHarvested / 10 ** 18;
     jsonObject.performanceFeesPNG = (tokensHarvested.totalPNGHarvested / 10) / 10 ** 18;
     jsonObject.xsnobRevenuePNG = ((tokensHarvested.totalPNGHarvested / 100) * 3) / 10 ** 18;
     jsonObject.performanceFeesQI = (tokensHarvested.totalQIHarvested / 10) / 10 ** 18;
     jsonObject.xsnobRevenueQI = ((tokensHarvested.totalQIHarvested / 100) * 3) / 10 ** 18;
+    jsonObject.performanceFeesAXIAL = (tokensHarvested.totalAXIALHarvested / 10) / 10 ** 18;
+    jsonObject.xsnobRevenueAXIAL = ((tokensHarvested.totalAXIALHarvested / 100) * 3) / 10 ** 18;
     jsonObject.performanceFeesJOE = (tokensHarvested.totalJOEHarvested / 10) / 10 ** 18;
     jsonObject.xsnobRevenueJOE = ((tokensHarvested.totalJOEHarvested / 100) * 3) / 10 ** 18;
     jsonObject.performanceFeesWAVAX = (tokensHarvested.totalWAVAXHarvested / 10) / 10 ** 18;
     jsonObject.xsnobRevenueWAVAX = ((tokensHarvested.totalWAVAXHarvested / 100) * 3) / 10 ** 18;
     fs.writeFileSync('./result.json', JSON.stringify(jsonObject));
   }
-  let valueHarvestedJOE, valueHarvestedPNG, valueHarvestedQI, valueHarvestedWAVAX;
+  let valueHarvestedJOE, valueHarvestedPNG, valueHarvestedQI, valueHarvestedWAVAX, valueHarvestedAXIAL;
 
   valueHarvestedJOE = JOEPrice * (tokensHarvested.totalJOEHarvested / 10 ** 18);
   valueHarvestedPNG = PNGPrice * (tokensHarvested.totalPNGHarvested / 10 ** 18);
   valueHarvestedQI = QIPrice * (tokensHarvested.totalQIHarvested / 10 ** 18);
+  valueHarvestedAXIAL = AXIALPrice * (tokensHarvested.totalAXIALHarvested / 10 ** 18);
   valueHarvestedWAVAX = AVAXValue * (tokensHarvested.totalWAVAXHarvested / 10 ** 18);
 
   console.log(`Total PNG Harvested: ${tokensHarvested.totalPNGHarvested / 10 ** 18}`);
   console.log(`Total JOE Harvested: ${tokensHarvested.totalJOEHarvested / 10 ** 18}`);
   console.log(`Total QI Harvested: ${tokensHarvested.totalQIHarvested / 10 ** 18}`);
+  console.log(`Total AXIAL Harvested: ${tokensHarvested.totalAXIALHarvested / 10 ** 18}`);
   console.log(`Total WAVAX Harvested: ${tokensHarvested.totalWAVAXHarvested / 10 ** 18}`);
   console.log(`JOE Value Harvested: $${valueHarvestedJOE} 
     PNG Value Harvested: $${valueHarvestedPNG} 
     QI Value Harvested: $${valueHarvestedQI} 
     WAVAX Value Harvested: $${valueHarvestedWAVAX} 
-    Total Value Harvested: $${valueHarvestedJOE + valueHarvestedPNG + valueHarvestedQI + valueHarvestedWAVAX}`);
+    AXIAL Value Harvested: $${valueHarvestedAXIAL} 
+    Total Value Harvested: $${valueHarvestedJOE + valueHarvestedPNG + valueHarvestedQI + valueHarvestedWAVAX + valueHarvestedAXIAL}`);
 
 }
