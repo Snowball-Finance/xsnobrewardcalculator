@@ -258,9 +258,9 @@
     "stakingAddress": "0x1f806f7C8dED893fd3caE279191ad7Aa3798E928"
   },
   {
-    "stakingAddress": "0xD49B406A7A29D64e081164F6C3353C599A2EeAE9",
+    "stakingAddress": "0x88afdaE1a9F58Da3E68584421937E5F564A0135b",
     "protocol": "Pangolin",
-    "strategy": "0x88afdaE1a9F58Da3E68584421937E5F564A0135b",
+    "strategy": "0x472174D73e5A5CfFDE80F6E6423F4d1e7B373084",
     "name": "PNG"
   },
   {
@@ -548,7 +548,7 @@
   {
     "stakingAddress": "0x958C0d0baA8F220846d3966742D4Fb5edc5493D3",
     "protocol": "AXIAL",
-    "strategy": "0x982925D85d3173045C08d90D6F465F78b44D50B8",
+    "strategy": "0x6eA2c23750011DDEF82b2B2A2d622E82cEf172Ac",
     "name": "AC4D"
   },
   {
@@ -558,49 +558,55 @@
     "name": "AM3D"
   },
   {
+    "stakingAddress": "0x958C0d0baA8F220846d3966742D4Fb5edc5493D3",
+    "protocol": "AXIAL",
+    "strategy": "0x8325C0bAe797fE52E5e5f8a13ab93f86a7D880aC",
+    "name": "AA3D"
+  },
+  {
     "stakingAddress": "0xd6a4F121CA35509aF06A0Be99093d08462f53052",
     "protocol": "Trader Joe",
     "strategy": "0x4B5f643489965bd9383A578c5FB55808Caa4F225",
     "name": "xJOE"
   },
   {
-    "stakingAddress": "0x2274491950B2D6d79b7e69b683b482282ba14885",
+    "stakingAddress": "0x45B2C4139d96F44667577C0D7F7a7D170B420324",
     "protocol": "Banker Joe",
     "strategy": "0x9f8eeAe99578882fF045D65441B75a85bA11c8c2",
     "name": "USDT.e"
   },
   {
-    "stakingAddress": "0x2274491950B2D6d79b7e69b683b482282ba14885",
+    "stakingAddress": "0x45B2C4139d96F44667577C0D7F7a7D170B420324",
     "protocol": "Banker Joe",
     "strategy": "0x794792E97c23cd95524A955C79292bdD14245EA3",
     "name": "WBTC.e"
   },
   {
-    "stakingAddress": "0x2274491950B2D6d79b7e69b683b482282ba14885",
+    "stakingAddress": "0x45B2C4139d96F44667577C0D7F7a7D170B420324",
     "protocol": "Banker Joe",
     "strategy": "0x7322fd7b3B4F213F003355cdFef62fdac1d0D58a",
     "name": "ETH.e"
   },
   {
-    "stakingAddress": "0x2274491950B2D6d79b7e69b683b482282ba14885",
+    "stakingAddress": "0x45B2C4139d96F44667577C0D7F7a7D170B420324",
     "protocol": "Banker Joe",
     "strategy": "0x997FbBbb0957Ace0512f38a23f5cfFafFc2172f9",
     "name": "LINK.e"
   },
   {
-    "stakingAddress": "0x2274491950B2D6d79b7e69b683b482282ba14885",
+    "stakingAddress": "0x45B2C4139d96F44667577C0D7F7a7D170B420324",
     "protocol": "Banker Joe",
     "strategy": "0xbACa6772f7313f5852eAeF64119b606629329186",
     "name": "USDC.e"
   },
   {
-    "stakingAddress": "0x2274491950B2D6d79b7e69b683b482282ba14885",
+    "stakingAddress": "0x45B2C4139d96F44667577C0D7F7a7D170B420324",
     "protocol": "Banker Joe",
     "strategy": "0xd3829B16a2A7338a15078c541BA331E49D635E29",
     "name": "MIM"
   },
   {
-    "stakingAddress": "0x2274491950B2D6d79b7e69b683b482282ba14885",
+    "stakingAddress": "0x45B2C4139d96F44667577C0D7F7a7D170B420324",
     "protocol": "Banker Joe",
     "strategy": "0x4078b1F0192d9b8b14299F8047CE6526F63BfbCa",
     "name": "xJOE"
