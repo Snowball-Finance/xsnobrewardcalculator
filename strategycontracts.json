@@ -204,9 +204,63 @@
     "stakingAddress": "0x1f806f7C8dED893fd3caE279191ad7Aa3798E928"
   },
   {
+    "protocol": "Pangolin",
+    "name": "AVAX-ORCA",
+    "strategy": "0x5b75E56E7Ee78Ff42F1fd0261F83A31F89F7B5F1",
+    "stakingAddress": "0x1f806f7C8dED893fd3caE279191ad7Aa3798E928"
+  },
+  {
+    "protocol": "Pangolin",
+    "name": "AVAX-AVAI",
+    "strategy": "0xDa14D01c068503CAb9CD4a8BC54748CbDBA21dd9",
+    "stakingAddress": "0x1f806f7C8dED893fd3caE279191ad7Aa3798E928"
+  },
+  {
+    "protocol": "Pangolin",
+    "name": "TUSD-DAI.e",
+    "strategy": "0x81E1bfb1830252dFD8eCb2Ce1AF077F27621622f",
+    "stakingAddress": "0x1f806f7C8dED893fd3caE279191ad7Aa3798E928"
+  },
+  {
+    "protocol": "Pangolin",
+    "name": "AVAX-MAXI",
+    "strategy": "0xD7BbEf974995fBb96cdB57a81b49AB4C6178Fab0",
+    "stakingAddress": "0x1f806f7C8dED893fd3caE279191ad7Aa3798E928"
+  },
+  {
+    "protocol": "Pangolin",
+    "name": "AVAX-CRAFT",
+    "strategy": "0x4F4b353f69f8C37DDDeB8d558561Ba68eBF73275",
+    "stakingAddress": "0x1f806f7C8dED893fd3caE279191ad7Aa3798E928"
+  },
+  {
+    "protocol": "Pangolin",
+    "name": "AVAX-CRA",
+    "strategy": "0xf74886B3f234A20ffE38D11d7A0f7100b5873179",
+    "stakingAddress": "0x1f806f7C8dED893fd3caE279191ad7Aa3798E928"
+  },
+  {
+    "protocol": "Pangolin",
+    "name": "AVAX-JEWEL",
+    "strategy": "0x2Ba4b6054b0CD9c587B623526166CF63f2EE55f3",
+    "stakingAddress": "0x1f806f7C8dED893fd3caE279191ad7Aa3798E928"
+  },
+  {
+    "protocol": "Pangolin",
+    "name": "AVAX-gOHM",
+    "strategy": "0xD2Cf3994b667C9fcb64b3549FA3eDba980A2D30C",
+    "stakingAddress": "0x1f806f7C8dED893fd3caE279191ad7Aa3798E928"
+  },
+  {
+    "protocol": "Pangolin",
+    "name": "USDC.e-MIM",
+    "strategy": "0x15f1366B0063C837B4C32D1fE6D0c6a0d14b9Ac1",
+    "stakingAddress": "0x1f806f7C8dED893fd3caE279191ad7Aa3798E928"
+  },
+  {
     "stakingAddress": "0xD49B406A7A29D64e081164F6C3353C599A2EeAE9",
     "protocol": "Pangolin",
-    "strategy": "0xA1EdFF60A604BB9dFEf25fc00b6D82a07cEAAf91",
+    "strategy": "0x88afdaE1a9F58Da3E68584421937E5F564A0135b",
     "name": "PNG"
   },
   {
@@ -474,6 +528,12 @@
     "name": "AVAX-MELT"
   },
   {
+    "stakingAddress": "0x188bED1968b795d5c9022F6a0bb5931Ac4c18F00",
+    "protocol": "Trader Joe",
+    "strategy": "0x3c946F6D5D7567486d506559F1706001871884c3",
+    "name": "AVAX-gOHM"
+  },
+  {
     "stakingAddress": "0x958C0d0baA8F220846d3966742D4Fb5edc5493D3",
     "protocol": "AXIAL",
     "strategy": "0x0Ab2EA5c4172928D988CFe3E1969C864E15BFdeE",
@@ -506,43 +566,43 @@
   {
     "stakingAddress": "0x2274491950B2D6d79b7e69b683b482282ba14885",
     "protocol": "Banker Joe",
-    "strategy": "0x3Ef4dC17b344cd234fa264d8D0bE424207f07532",
+    "strategy": "0x9f8eeAe99578882fF045D65441B75a85bA11c8c2",
     "name": "USDT.e"
   },
   {
     "stakingAddress": "0x2274491950B2D6d79b7e69b683b482282ba14885",
     "protocol": "Banker Joe",
-    "strategy": "0xA0a72F0b5056fba03158fc2D75CF6B4e364c6520",
+    "strategy": "0x794792E97c23cd95524A955C79292bdD14245EA3",
     "name": "WBTC.e"
   },
   {
     "stakingAddress": "0x2274491950B2D6d79b7e69b683b482282ba14885",
     "protocol": "Banker Joe",
-    "strategy": "0x09e26431E600F22D111a6F3c8F88D9BAe2a64AD5",
+    "strategy": "0x7322fd7b3B4F213F003355cdFef62fdac1d0D58a",
     "name": "ETH.e"
   },
   {
     "stakingAddress": "0x2274491950B2D6d79b7e69b683b482282ba14885",
     "protocol": "Banker Joe",
-    "strategy": "0xcE1A073F8df6796bd3B969f8CE1A04f569965a2B",
+    "strategy": "0x997FbBbb0957Ace0512f38a23f5cfFafFc2172f9",
     "name": "LINK.e"
   },
   {
     "stakingAddress": "0x2274491950B2D6d79b7e69b683b482282ba14885",
     "protocol": "Banker Joe",
-    "strategy": "0xcD4a6733D1E497672290b0C4b891dFc10E03E973",
+    "strategy": "0xbACa6772f7313f5852eAeF64119b606629329186",
     "name": "USDC.e"
   },
   {
     "stakingAddress": "0x2274491950B2D6d79b7e69b683b482282ba14885",
     "protocol": "Banker Joe",
-    "strategy": "0xA96030a8527966c0e23033f1248906866a99D9D7",
+    "strategy": "0xd3829B16a2A7338a15078c541BA331E49D635E29",
     "name": "MIM"
   },
   {
     "stakingAddress": "0x2274491950B2D6d79b7e69b683b482282ba14885",
     "protocol": "Banker Joe",
-    "strategy": "0x7f716a918503611b7949F8C76324A8422d5567ab",
+    "strategy": "0x4078b1F0192d9b8b14299F8047CE6526F63BfbCa",
     "name": "xJOE"
   },
   {

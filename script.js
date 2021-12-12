@@ -159,11 +159,7 @@ async function searchTransactions() {
           senderAddress === Constants.WAVAXContract.toLowerCase()) {
             if (element2.decoded) {
               element2.decoded.WAVAXIncentive = (senderAddress === Constants.WAVAXContract.toLowerCase());
-              //ignore PNG returning from the staking pool
-              if(!(listStrategyContracts[counter].name === 'PNG' 
-                && !element2.decoded.WAVAXIncentive)){
-                allDecodedEvents = allDecodedEvents.concat(element2.decoded);
-              }
+              allDecodedEvents = allDecodedEvents.concat(element2.decoded);
             }
           }
         });
