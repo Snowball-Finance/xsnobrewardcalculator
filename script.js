@@ -155,8 +155,12 @@ async function searchTransactions() {
               tokenAddress = Constants.QIContract;
           }
           const senderAddress = element2.sender_address.toLowerCase();
-          if (senderAddress === tokenAddress.toLowerCase() ||
-          senderAddress === Constants.WAVAXContract.toLowerCase()) {
+
+          if (senderAddress === tokenAddress.toLowerCase() 
+          || senderAddress === Constants.WAVAXContract.toLowerCase()
+          || ((listStrategyContracts[counter].name === "PNG") 
+            && (senderAddress === listStrategyContracts[counter].stakingAddress.toLowerCase()))
+          ){
             if (element2.decoded) {
               element2.decoded.WAVAXIncentive = (senderAddress === Constants.WAVAXContract.toLowerCase());
               allDecodedEvents = allDecodedEvents.concat(element2.decoded);
@@ -166,10 +170,13 @@ async function searchTransactions() {
       }
     });
     listValidTransactions = [];
-
+    
     //get only the transfer transactions
     let onlyTransfers = lodash.filter(allDecodedEvents, function (o) {
-      return o.name.startsWith('Transfer') || o.name.startsWith('Deposit');
+      return (
+        o.name.startsWith('Transfer') && !(listStrategyContracts[counter].name === "PNG")) 
+        || o.name.startsWith('Deposit') 
+        || o.name.startsWith('RewardPaid');
     });
     allDecodedEvents = [];
 
@@ -181,12 +188,13 @@ async function searchTransactions() {
       let validFrom = false;
       const WAVAXIncentive = element.WAVAXIncentive;
       element.params.forEach((element2) => {
-        if (validTo && validFrom) {
+        if ((validTo && validFrom) || element2.name == "reward") {
           if (
             element2.name == 'value' 
             || (element2.name == 'wad' 
               && listStrategyContracts[counter].protocol != 'AAVE'
               && listStrategyContracts[counter].name != 'WAVAX')
+            || element2.name == "reward"
           ) {
             if(WAVAXIncentive){
               tokensHarvested.totalWAVAXHarvested += (element2.value * 1);

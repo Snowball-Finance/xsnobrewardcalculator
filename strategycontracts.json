@@ -414,9 +414,9 @@
     "name": "AVAX-CHART"
   },
   {
-    "stakingAddress": "0xd6a4F121CA35509aF06A0Be99093d08462f53052",
+    "stakingAddress": "0x188bED1968b795d5c9022F6a0bb5931Ac4c18F00",
     "protocol": "Trader Joe",
-    "strategy": "0x1f49CE2d792d50b5db60B7500615821A72155F4b",
+    "strategy": "0x3aC78a7CC3C92BeFAaE9B59D4385a10403fB7c55",
     "name": "AVAX-KLO"
   },
   {
@@ -549,6 +549,12 @@
     "stakingAddress": "0x958C0d0baA8F220846d3966742D4Fb5edc5493D3",
     "protocol": "AXIAL",
     "strategy": "0x6eA2c23750011DDEF82b2B2A2d622E82cEf172Ac",
+    "name": "OLD AC4D"
+  },
+  {
+    "stakingAddress": "0x958C0d0baA8F220846d3966742D4Fb5edc5493D3",
+    "protocol": "AXIAL",
+    "strategy": "0x92794b4789173dc06304238B1c4A2572a95EaE5d",
     "name": "AC4D"
   },
   {
@@ -560,7 +566,7 @@
   {
     "stakingAddress": "0x958C0d0baA8F220846d3966742D4Fb5edc5493D3",
     "protocol": "AXIAL",
-    "strategy": "0x8325C0bAe797fE52E5e5f8a13ab93f86a7D880aC",
+    "strategy": "0x351af4fdd0bdb0cf6ad31119fec3465977ab87c2",
     "name": "AA3D"
   },
   {
@@ -651,6 +657,12 @@
     "stakingAddress": "0x486Af39519B4Dc9a7fCcd318217352830E8AD9b4",
     "protocol": "BENQI",
     "strategy": "0xe9d8C31c5Bd5f2939731387dBc4f1c984828F532",
+    "name": "OLD QI"
+  },
+  {
+    "stakingAddress": "0x486Af39519B4Dc9a7fCcd318217352830E8AD9b4",
+    "protocol": "BENQI",
+    "strategy": "0x21997Ab6ee3f5B382067171705c1f4Cc75163a9b",
     "name": "QI"
   },
   {
