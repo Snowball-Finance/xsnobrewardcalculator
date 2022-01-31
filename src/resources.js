@@ -22,9 +22,10 @@ module.exports = {
         static QIContract = "0x8729438EB15e2C8B576fCc6AeCdA6A148776C0F5";
         static AXIALContract = "0xcF8419A615c57511807236751c0AF38Db4ba3351";
         static WAVAXContract = "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7";
+        static PTPContract = "0x22d4002028f537599bE9f666d1c4Fa138522f9c8";
         static ZeroAddress = "0x0000000000000000000000000000000000000000";
         static covalentAPIURL = "https://api.covalenthq.com/v1/43114/address/";
-        static RPCURL = "https://api.avax.network/ext/bc/C/rpc";
+        static RPCURL = "https://node.snowapi.net/ext/bc/C/rpc";
         static standardLimit = 1000;
         static snowLogo = snowglobesLogo;
     }
