@@ -232,9 +232,11 @@ async function searchTransactions() {
           }
         }
         if (element2.name === 'from') {
-          if ((element2.value.toLowerCase() ===
+          if (element2.value.toLowerCase() ===
             listStrategyContracts[counter].stakingAddress.toLowerCase()
-            || (element2.value.toLowerCase() === Constants.ZeroAddress))) {
+            || element2.value.toLowerCase() ===
+            listStrategyContracts[counter].stakingAddress2
+            || element2.value.toLowerCase() === Constants.ZeroAddress) {
               validFrom = true;
           };
         }
