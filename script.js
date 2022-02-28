@@ -198,7 +198,8 @@ async function searchTransactions() {
             element2.name == 'value' 
             || (element2.name == 'wad' 
               && listStrategyContracts[counter].protocol != 'AAVE'
-              && listStrategyContracts[counter].name != 'WAVAX')
+              && listStrategyContracts[counter].name != 'WAVAX'
+              && listStrategyContracts[counter].name != 'WAVAX - Optimized')
             || element2.name == "reward"
           ) {
             if(WAVAXIncentive){
