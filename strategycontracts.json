@@ -1,23 +1,5 @@
 [
   {
-    "protocol": "Platypus",
-    "strategy": "0x50C4Bb8eeCD05E2353367c0C9D464ed2D1242133",
-    "name": "PTP DAI.e",
-    "stakingAddress": "0xb0523f9f473812fb195ee49bc7d2ab9873a98044"
-  },
-  {
-    "protocol": "Platypus",
-    "strategy": "0x76F722DaCBA4620563563E05db291B965227c38A",
-    "name": "PTP USDC.e",
-    "stakingAddress": "0xb0523f9f473812fb195ee49bc7d2ab9873a98044"
-  },
-  {
-    "protocol": "Platypus",
-    "strategy": "0x40ADE0b3Baa99D3074F398D42Fa0Ab9D5Ee3fe09",
-    "name": "PTP USDT.e",
-    "stakingAddress": "0xb0523f9f473812fb195ee49bc7d2ab9873a98044"
-  },
-  {
     "protocol": "Pangolin",
     "name": "AVAX-PNG",
     "strategy": "0xD8d665fbafb87a1baF80CD7d72171CB664dE12c4",
@@ -296,19 +278,19 @@
     "name": "AVAX-XAVA"
   },
   {
-    "stakingAddress": "0xd6a4F121CA35509aF06A0Be99093d08462f53052",
+    "stakingAddress": "0x4483f0b6e2F5486D06958C20f8C39A7aBe87bf8F",
     "protocol": "Trader Joe",
     "strategy": "0x6f69C5819c42659AF865d28C0E6Ea5dCf3F1E41F",
     "name": "AVAX-ETH.e"
   },
   {
-    "stakingAddress": "0xd6a4F121CA35509aF06A0Be99093d08462f53052",
+    "stakingAddress": "0x4483f0b6e2F5486D06958C20f8C39A7aBe87bf8F",
     "protocol": "Trader Joe",
     "strategy": "0x5eED5F460aC62AF90147df981C6BF29C7B166919",
     "name": "AVAX-WBTC.e"
   },
   {
-    "stakingAddress": "0xd6a4F121CA35509aF06A0Be99093d08462f53052",
+    "stakingAddress": "0x4483f0b6e2F5486D06958C20f8C39A7aBe87bf8F",
     "protocol": "Trader Joe",
     "strategy": "0x92dAD9EA5027Df9A3f1417E2597DA718c9DDAC5F",
     "name": "AVAX-USDT.e"
@@ -326,10 +308,10 @@
     "name": "USDT.e-DAI.e"
   },
   {
-    "stakingAddress": "0xd6a4F121CA35509aF06A0Be99093d08462f53052",
+    "stakingAddress": "0x4483f0b6e2F5486D06958C20f8C39A7aBe87bf8F",
     "protocol": "Trader Joe",
-    "strategy": "0x753949E85E50ede6B800D0dFD1e8d1882B966Bb2",
-    "name": "AVAX-USDC.e"
+    "strategy": "0x9e61dA0111a844b1E1dBbc027edC51d8398097Bb",
+    "name": "AVAX-USDC"
   },
   {
     "stakingAddress": "0xd6a4F121CA35509aF06A0Be99093d08462f53052",
@@ -344,7 +326,7 @@
     "name": "AVAX-QI"
   },
   {
-    "stakingAddress": "0xd6a4F121CA35509aF06A0Be99093d08462f53052",
+    "stakingAddress": "0x4483f0b6e2F5486D06958C20f8C39A7aBe87bf8F",
     "protocol": "Trader Joe",
     "strategy": "0xAFCa35AE5Dd4D8FC900AD7b08d7f3e96E498B2B8",
     "name": "AVAX-MIM"
@@ -386,10 +368,10 @@
     "name": "ETH.e-USDC.e"
   },
   {
-    "stakingAddress": "0xd6a4F121CA35509aF06A0Be99093d08462f53052",
+    "stakingAddress": "0x4483f0b6e2F5486D06958C20f8C39A7aBe87bf8F",
     "protocol": "Trader Joe",
-    "strategy": "0x351d699550c2C194554D77A7763F51eFDe2cEE22",
-    "name": "JOE-USDC.e"
+    "strategy": "0xA10248624402Acc8733f9697f6E22e10087f7b40",
+    "name": "JOE-USDC"
   },
   {
     "stakingAddress": "0xd6a4F121CA35509aF06A0Be99093d08462f53052",
@@ -492,6 +474,42 @@
     "protocol": "Trader Joe",
     "strategy": "0x37ffC9cDf0c3b9aFC5E0D979cd0aCD145a86347C",
     "name": "AVAX-sAVAX"
+  },
+  {
+    "protocol": "Trader Joe",
+    "strategy": "0x4FA536e8756016472e2DB072679ce617Ab07BA34",
+    "name": "AVAX-DFIAT",
+    "stakingAddress": "0x188bED1968b795d5c9022F6a0bb5931Ac4c18F00"
+  },
+  {
+    "protocol": "Trader Joe",
+    "strategy": "0xaE399489E56A03b1882a3be498a52741aEbD5C97",
+    "name": "AVAX-MONEY",
+    "stakingAddress": "0x188bED1968b795d5c9022F6a0bb5931Ac4c18F00"
+  },
+  {
+    "protocol": "Trader Joe",
+    "strategy": "0x2669c909e95AF443f45b5ae96C24e5E409F4e099",
+    "name": "AVAX-VTX",
+    "stakingAddress": "0x188bED1968b795d5c9022F6a0bb5931Ac4c18F00"
+  },
+  {
+    "protocol": "Trader Joe",
+    "strategy": "0x7F23a92E0e05317B0c468f196456d08b582d06C2",
+    "name": "AVAX-APE",
+    "stakingAddress": "0x188bED1968b795d5c9022F6a0bb5931Ac4c18F00"
+  },
+  {
+    "protocol": "Trader Joe",
+    "strategy": "0x40f9c78CE39b4Ce12B65dAEdca7f3f699613FF42",
+    "name": "AVAX-FLY",
+    "stakingAddress": "0x188bED1968b795d5c9022F6a0bb5931Ac4c18F00"
+  },
+  {
+    "protocol": "Trader Joe",
+    "strategy": "0x65558dAF77c4496f0FabD2E1d89CdA654080999b",
+    "name": "AVAX-DEG",
+    "stakingAddress": "0x188bED1968b795d5c9022F6a0bb5931Ac4c18F00"
   },
   {
     "stakingAddress": "0x958C0d0baA8F220846d3966742D4Fb5edc5493D3",
@@ -810,5 +828,41 @@
     "name": "AVAX-FEED",
     "strategy": "0x8b3FB9f70Ce637409e4d4D9238BEB76d6A661e2B",
     "stakingAddress": "0x1f806f7C8dED893fd3caE279191ad7Aa3798E928"
+  },
+  {
+    "protocol": "Vector",
+    "name": "xPTP-PTP",
+    "strategy": "0x6605A199D6c86f2f6c5089A9cc081eEC345AB783",
+    "stakingAddress": "0x423D0FE33031aA4456a17b150804aA57fc157d97"
+  },
+  {
+    "protocol": "Vector",
+    "name": "DAI.e",
+    "strategy": "0x9078e4249d308F2a995C82D577dBdc1966f8eE81",
+    "stakingAddress": "0x423D0FE33031aA4456a17b150804aA57fc157d97"
+  },
+  {
+    "protocol": "Vector",
+    "name": "USDT.e",
+    "strategy": "0xfD1d72843653CC794fD604B61d25c03919D8d3a5",
+    "stakingAddress": "0x423D0FE33031aA4456a17b150804aA57fc157d97"
+  },
+  {
+    "protocol": "Vector",
+    "name": "USDC",
+    "strategy": "0x3B673cb89B228F3c80Ffee189ae5B060D301dc30",
+    "stakingAddress": "0x423D0FE33031aA4456a17b150804aA57fc157d97"
+  },
+  {
+    "protocol": "Vector",
+    "name": "USDt",
+    "strategy": "0x23380f176614566cA8212AF5a1ED9aAEb29D3b09",
+    "stakingAddress": "0x423D0FE33031aA4456a17b150804aA57fc157d97"
+  },
+  {
+    "protocol": "Vector",
+    "name": "VTX",
+    "strategy": "0xacD26B78778d75c672ABD320Cf6c25E76BE2bd32",
+    "stakingAddress": "0x423D0FE33031aA4456a17b150804aA57fc157d97"
   }
 ]
